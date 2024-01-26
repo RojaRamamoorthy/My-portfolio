@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Contact</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+* {
+  font-family: garamond;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #d3ad7f;
+  background-repeat: no-repeat;
+}
+
+.signupSection {
+
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  color: white;
+  box-shadow: 3px 1px 15px 3px rgb(200, 209, 214);
+}
+
+.info {
+  width: 45%;
+  background:black;
+  box-shadow: 3px 1px 15px 3px rgb(200, 209, 214);
+  box-shadow: white;
+  padding: 30px 0;
+  border-right: 5px solid rgba(30, 30, 30, .8);
+  h2 {
+    padding-top: 30px;
+    font-weight: 300;
+  }
+  p {
+    font-size: 18px;
+  }
+  .icon {
+    font-size: 8em;
+    padding: 20px 0;
+    color: rgba(10, 180, 180, 1);
+  }
+}
+
+.signupForm {
+  width: 70%;
+  padding: 30px 0;
+  background: white;
+  transition: .2s;
+  h2 {
+    font-weight: 300;
+  }
+}
+
+.inputFields {
+  margin: 15px 0;
+  font-size: 16px;
+  padding: 10px;
+  width: 250px;
+  border: 5px solid #d3ad7f;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, .2);
+  color: white;
+  outline: none;
+}
+
+.noBullet {
+  list-style-type: none;
+  padding: 0;
+}
+label{
+color:black;
+}
+h1{
+    color: #d3ad7f;
+    
+}
+a{
+    color:white;
+}
+
+#join-btn {
+  border: 1px solid #d3ad7f;
+  background: #d3ad7f;
+  font-size: 18px;
+  color: black;
+  margin-top: 20px;
+  padding: 10px 50px;
+
+ 
+ 
+}
+.social-icons {
+            margin-top: 20px;
+            font-size: 24px;
+        }
+
+        .social-icons a {
+            margin-right: 15px;
+            color: white;
+        }
+        label{
+            color:black;
+        }
+        a{
+            padding: 15px;
+            text-decoration: none;
+            color: #d3ad7f;
+            font-size: large;
+            background-color: black;
+            border-radius: 20%;
+        }
+        a:hover{
+            background-color: white;
+            color: black;
+        }
+        hr{
+            color:#d3ad7f ;
+        }
+        nav{
+            margin-top: 30px;
+            text-align: center;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <hr>
+    <nav>
+      
+      <a href="index.html" ><i class="glyphicon glyphicon-home"></i> Home</a>
+      <a href="about.html"><i class="glyphicon glyphicon-search"></i> About</a>
+      <a href="project.html"><i class="glyphicon glyphicon-book"></i> Projects</a>
+      <a href="contact.html"><i class="glyphicon glyphicon-user"></i> Contact</a>
+    </nav><br>
+    <hr><br><br><br>
+    <div class="signupSection">
+        <div class="info"><br><br><br><br><br>
+          <h1>Get in Touch!</h1>
+          
+          <h3>Reach out to me on</h3>
+          <div class="social-icons">
+            <a href="https://github.com/RojaRamamoorthy" target="_blank" rel="noopener noreferrer"><i class="fa fa-github fa-fw"></i></a>
+            <a href="https://www.linkedin.com/in/your-linkedin-profile/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram fa-fw"></i></a>
+            <a href="mailto:rojaramamoorthy03@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope fa-fw"></i></a>
+            <a href="https://www.linkedin.com/in/roja-ramamoorthy-4487ba228/"><i class="fa fa-linkedin fa-fw"></i></a>
+        </div>
+        </div>
+        <form action="#" method="POST" class="signupForm" name="signupform">
+          
+          <ul class="noBullet">
+            <li>
+              <label>Name:</label><br>
+              <input type="text" class="inputFields" id="username" name="username" placeholder="Name" value="" oninput="return userNameValidation(this.value)" required/>
+            </li>
+           
+            <li>
+              <label for="email">Email:</label><br>
+              <input type="email" class="inputFields" id="email" name="email" placeholder="Email" value="" required/>
+            </li>
+            <li>
+                <label>Feedback:</label><br>
+                <input type="text" class="inputFields"  name="password" placeholder="Feedback" value="" oninput="return passwordValidation(this.value)" required/>
+              </li>
+            <li id="center-btn">
+              <input type="submit" id="join-btn" name="contact" alt="Contact" value="Contact Me">
+            </li>
+          </ul>
+        </form>
+      </div>
+</body>
+</html>
